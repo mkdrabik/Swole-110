@@ -1,11 +1,11 @@
 p {
-  color: #75c3f7;
+  color: #000000;
 }
 .hello {
-  color: #befe9f;
+  color: #f50909;
 }
 #world {
-  color: #cfa3df;
+  color: #ff0000;
 }
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 
@@ -31,17 +31,12 @@ body {
 
 .navbar {
   z-index: 1;
-  background: #f5f5f5;
+  background: #ffd2d2;
   border-image: linear-gradient(
     to right,
-    #fe9f9f,
-    #fec79f,
-    #fadf94,
-    #befe9f,
-    #9ffec5,
-    #9fedfe,
-    #cfa3df,
-    #fe9fe9
+    #000000,
+    #f80505,
+    #000000,
   );
   border-left: 0px;
   border-right: 0px;
@@ -69,14 +64,14 @@ body {
   font-family: "Quicksand";
   font-size: 2.25vw;
   font-weight: bold;
-  color: #727272;
-  text-shadow: 0px 0px 0px #e6e6e6;
+  color: #131212;
+  text-shadow: 0px 0px 0px #040404;
   letter-spacing: 0.15em;
   margin-top: 0.5em;
 }
 
 .nav-link:hover {
-  color: #aaaaaa;
+  color: #1a1717;
 }
 
 img.logo {
@@ -107,18 +102,7 @@ body {
 
 .navbar {
   z-index: 1;
-  background: #f5f5f5;
-  border-image: linear-gradient(
-    to right,
-    #fe9f9f,
-    #fec79f,
-    #fadf94,
-    #befe9f,
-    #9ffec5,
-    #9fedfe,
-    #cfa3df,
-    #fe9fe9
-  );
+  background: #100f0f;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
@@ -171,12 +155,12 @@ img.logo {
 .red-border { border-color: #fe9f9f;}
 .orange-border { border-color: #fec79f;}
 .yellow-border { border-color: #fadf94;}
-.green-border {border-color: #befe9f;}
+.green-border {border-color: #111210;}
 .blue-border {border-color: #9fedfe;}
 .purple-border {border-color: #cfa3df;}
 .pink-border {border-color: #fe9fe9;}
 
 .checked {
-  background-color: lime;
+  background-color: rgb(21, 223, 21);
   opacity: 0.2;
 }
