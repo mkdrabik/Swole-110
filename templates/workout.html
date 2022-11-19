@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create Workout!</title>
+        <link rel='stylesheet' href='/static/bootstrap.min.css'>
+        <link rel='stylesheet' href='/static/styles.css'>
+    </head>
+    <body>
+            <!-- navigation bar -->
+        <nav class="navbar navbar-expand">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/"><img class="logo" src="/static/logo.png" alt="logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/workout">Create Workout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/view-todo-list">view</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <form method="post">
+            <label for="goal">Goal:</label>
+            <select id="goal" name="goal">
+                <option value="Gain">Gain Stregth</option>
+                <option value="Lose">Lose Weight</option>
+            </select>
+            <br />
+            <br />
+            <label for="workout">Workout:</label>
+            <select id="workout" name="workout">
+                <option value="legs">Legs</option>
+                <option value="back">Back</option>
+                <option value="chest">Chest</option>
+                <option value="bicep">Bicep</option>
+                <option value="tricep">Tricep</option>
+                <option value="shoulders">Shoulders</option>
+            </select>
+            <br />
+            <br />
+            <input type="submit" value="Create">
+        </form>
+    </body>
+</html>
