@@ -15,37 +15,39 @@
                         <a href="/"><img class="logo" src="/static/logo.png" alt="logo"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/workout">Create Workout</a>
+                        <a class="nav-link" href="/create-workout">Create Workout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/view-todo-list">view</a>
+                        <a class="nav-link" href="/view-todo-list">View Workout</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <form method="post">
-            <label for="goal">Goal:</label>
+            <br>
+            <br>
+            <label for="goal">What is you goal?</label>
             <select id="goal" name="goal">
-                <option value="Gain">Gain Stregth</option>
-                <option value="Lose">Lose Weight</option>
+                <option value="Get Stronger">Get Stronger</option>
+                <option value="Lose Weight">Lose Weight</option>
             </select>
-            <br />
-            <br />
-            <label for="workout">Workout:</label>
+            <br>
+            <br>
+            <label for="workout">Which muscle group do you want to workout:</label>
             <select id="workout" name="workout">
-                <option value="legs">Legs</option>
-                <option value="back">Back</option>
-                <option value="chest">Chest</option>
-                <option value="bicep">Bicep</option>
-                <option value="tricep">Tricep</option>
-                <option value="shoulders">Shoulders</option>
+                <option value="Legs">Legs</option>
+                <option value="Back">Back</option>
+                <option value="Chest">Chest</option>
+                <option value="Biceps">Bicep</option>
+                <option value="Triceps">Tricep</option>
+                <option value="Shoulders">Shoulders</option>
             </select>
-            <br />
-            <br />
-            <input type="submit" value="Create">
+            <br>
+            <br>
+            <input type="submit" value="Generate Workout">
         </form>
     </body>
 </html>

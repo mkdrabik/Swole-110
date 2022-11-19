@@ -15,43 +15,23 @@
                         <a href="/"><img class="logo" src="/static/logo.png" alt="logo"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/create-todo">create</a>
+                        <a class="nav-link" href="/create-workout">Create Workout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/view-todo-list">view</a>
+                        <a class="nav-link" href="/view-todo-list">View Workout</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <h2>Todo List</h2>
-            {% for i in range(todo_list| length) %} {% set todo = todo_list[i] %}
-                <div
-                    class="todo {{ 'checked' if todo.checked else ''}}"
-                >
-                <div>
-                    <form action="/view-todo-list" method="POST">
-                        <button
-                        type="submit"
-                        style="float: right"
-                        value="{{i}}"
-                        name="check-button"
-                        id="check-button"
-                        >
-                    {{'Uncheck' if todo.checked else 'Check'}}
-                    </button>
-                </form>
-                <form action="/edit-todo{{i}}" method="GET">
-                    <button type="submit" style="float: right" value="{{i}}" name="edit-button" id="edit-button" todo-id="{{i}}">
-                        Edit
-                    </button>
-                </form>
-                </div>
-                <h4>{{todo.title}}</h4>
-                <p>{{todo.description}}</p>
-                </div>
-            {% endfor %}
+        <h2>Workout List</h2>
+        {% for workout in workout_list %}
+            <div>
+            <h4>Your new workout:</h4>
+            <p>{{workout.type}}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
